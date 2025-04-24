@@ -1,7 +1,3 @@
-// Importamos el módulo completo
-import pkg from '@netlify/next'
-const { withNetlify } = pkg
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -12,7 +8,7 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-  },
+  }
 }
 
-export default withNetlify(nextConfig)
+export default nextConfig
