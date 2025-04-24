@@ -1,4 +1,6 @@
-import { withNetlify } from '@netlify/next'
+// Importamos el módulo completo
+import pkg from '@netlify/next'
+const { withNetlify } = pkg
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,7 +13,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // NO pongas `output: 'export'` si usás Server Actions
 }
 
 export default withNetlify(nextConfig)
