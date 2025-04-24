@@ -2,8 +2,8 @@ import type React from "react"
 import "@/app/globals.css"
 
 export const metadata = {
-  title: "Spline Visualization",
-  description: "3D Spline visualization",
+  title: "Amia",
+  description: "Amia consultoria",
     generator: 'v0.dev'
 }
 
