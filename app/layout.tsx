@@ -1,0 +1,27 @@
+import type React from "react"
+import "@/app/globals.css"
+
+export const metadata = {
+  title: "Spline Visualization",
+  description: "3D Spline visualization",
+    generator: 'v0.dev'
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      </head>
+      <body
+        style={{ margin: 0, padding: 0, overflow: "hidden", transition: "background-color 0.3s ease, color 0.3s ease" }}
+      >
+        {children}
+      </body>
+    </html>
+  )
+}
